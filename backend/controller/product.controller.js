@@ -59,7 +59,7 @@ export const updateProducts = async (req, res) => {
     });
 
     res.status(200).json({
-      status: true,
+      success: true,
       data: updatedproducts,
       message: "Updated Products Successfully",
     });
