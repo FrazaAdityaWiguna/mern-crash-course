@@ -19,7 +19,7 @@ export const getAllProducts = async (req, res) => {
 export const createProducts = async (req, res) => {
   const product = req.body; // User will send this data
 
-  console.log("product", product)
+  console.log("product", product);
 
   if (!product.name || !product.price || !product.image) {
     return res
@@ -59,7 +59,7 @@ export const updateProducts = async (req, res) => {
     });
 
     res.status(200).json({
-      message: true,
+      status: true,
       data: updatedproducts,
       message: "Updated Products Successfully",
     });
